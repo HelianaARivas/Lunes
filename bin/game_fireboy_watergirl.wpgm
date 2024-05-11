@@ -1,0 +1,23 @@
+import wollok.game.*
+import personaje1.*
+import nivel1.*
+import extras1.*
+
+program gameFireboyWatergirl {
+	const musica=game.sound("musica.mp3")
+	
+	musica.shouldLoop(true)
+	game.schedule(500, {musica.play()})
+	keyboard.p().onPressDo({musica.pause()}) //PAUSAR LA MUSICA DE FONDO CON "p"
+	keyboard.r().onPressDo({musica.resume()}) //REANUDAR LA MUSICA DE FONDO CON "r"
+	
+	game.title("The Office - Sucursal Scranton")
+	game.width(10)
+	game.height(10)
+	game.boardGround("fondoprueba.png")
+	
+	
+	primerEscenario.iniciar()
+	game.start()
+
+}
