@@ -61,17 +61,17 @@ object cafe {
 object whisky {
 	var property position = game.at(4,4)
 	
-	method image() = "cafe50.png"  //BUSCAR IMAGEN DE UNA BOTELLA DE WHISKY
+	method image() = "whisky.png"  //BUSCAR IMAGEN DE UNA BOTELLA DE WHISKY
 }
 object arbusto {
 	var property position = game.at(2,7)
 	
-	method image() = "cafe50.png"  // BSCAR IMAGEN DE UNA PLANTA 
+	method image() = "planta.png"  // BSCAR IMAGEN DE UNA PLANTA 
 }
  object pastilla{
  	var property position = game.at(9,5)
  	
- 	method image() = "cafe50.png" //BUSCAR IMAGEN DE PASTILLA
+ 	method image() = "pastilla.png" //BUSCAR IMAGEN DE PASTILLA
  }
 
 object paredes {
